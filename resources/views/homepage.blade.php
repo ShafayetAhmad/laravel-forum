@@ -6,6 +6,12 @@
     <title>Laravel Homepage</title>
 </head>
 <body>
-    <h1>This is the homepage</h1>
+    <h1>List of all the students of class {{$class}}</h1>
+    <ul>
+    @foreach ($students as $student)
+        <li>{{$student}}</li>
+    @endforeach
+    </ul>
+    
 </body>
 </html>
