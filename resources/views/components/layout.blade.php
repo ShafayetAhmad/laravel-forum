@@ -33,7 +33,7 @@
     </header>
     <!-- header ends here -->
 
-    {{$slot}}
+    {{$slot}}       {{-- this will be filled with given data}}
 
      <!-- footer begins -->
     <footer class="border-top text-center small text-muted py-3">
