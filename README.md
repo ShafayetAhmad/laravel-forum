@@ -1,6 +1,6 @@
 # Laravel Full Stack Blog (Work in Progress)
 
-This is an ongoing project for a full-stack blog built with Laravel framework and Bootstrap for the front end. The project aims to include user registration, login functionality, and various features commonly found in a blog application.
+This is an ongoing project for a full stack blog built with Laravel framework and Bootstrap for the frontend. The project aims to include user registration, login functionality, and various features commonly found in a blog application.
 
 ## Features (Planned)
 
@@ -9,8 +9,10 @@ This is an ongoing project for a full-stack blog built with Laravel framework an
 - Create, read, update, and delete blog posts
 - Commenting system for blog posts
 - Categories and tags for organizing blog posts
-- Search functionality
+- Blog post search functionality
 - User profile management
+- User follower system
+- Chat functionality
 
 ## Technologies Used
 
@@ -47,6 +49,8 @@ This project is currently under development, and the following features are plan
 - Social sharing functionality
 - Email notifications
 - Advanced search options
+- User follower system
+- Real-time chat functionality
 
 Please refer to the project's issue tracker and milestones for more details on upcoming features and tasks.
 
