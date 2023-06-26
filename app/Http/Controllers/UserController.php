@@ -39,9 +39,14 @@ class UserController extends Controller
             'password' => $incomingFields['loginpassword']
         ])){
             $request->session()->regenerate();
-            return "Success!!!";
+            return redirect('/');
         } else{
             return "Sorry!!!";
         }
+    }
+
+    function logout(){
+        auth()->logout();
+        return redirect('/');
     }
 }

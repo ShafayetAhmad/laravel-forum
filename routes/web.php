@@ -22,3 +22,5 @@ Route::get('/about', [ExampleController::class, "aboutPage"]);
 Route::post('/register', [UserController::class, 'register']);
 
 Route::post('/loggedIn', [UserController::class, 'loggedIn']);
+
+Route::post('/logout', [UserController::class, 'logout']);
