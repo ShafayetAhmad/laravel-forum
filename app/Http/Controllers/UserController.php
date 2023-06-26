@@ -25,7 +25,7 @@ class UserController extends Controller
         $incomingFields['password'] = bcrypt($incomingFields['password']);
 
         User::create($incomingFields);
-        return "hello from register page";
+        return redirect('/')->with('regSuccess', 'Registration Successful!');
     }
 
     function loggedIn(Request $request){

@@ -67,6 +67,14 @@
     </div>
     @endif
 
+    @if (session()->has('regSuccess'))
+    <div class="container container--narrow">
+      <div class="alert alert-success text-center">
+        {{session('regSuccess')}}
+      </div>
+    </div>
+    @endif
+
     {{$slot}}
 
      <!-- footer begins -->
