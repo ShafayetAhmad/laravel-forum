@@ -20,4 +20,21 @@ class UserController extends Controller
         User::create($incomingFields);
         return "hello from register page";
     }
+
+    function loggedIn(Request $request){
+        $incomingFields = $request->validate([
+            'loginusername' => 'required',
+            'loginpassword' => 'required'
+        ]);
+
+        if(auth()->attempt([
+            'username' => $incomingFields['loginusername'],
+            'password' => $incomingFields['loginpassword']
+        ])){
+            $request->session()->regenerate();
+            return "Success!!!";
+        } else{
+            return "Sorry!!!";
+        }
+    }
 }
