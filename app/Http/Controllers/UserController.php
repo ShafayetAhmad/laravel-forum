@@ -41,7 +41,7 @@ class UserController extends Controller
             $request->session()->regenerate();
             return redirect('/');
         } else{
-            return "Sorry!!!";
+            return redirect('/')->with('failure', 'Invalid Credentials!');
         }
     }
 
